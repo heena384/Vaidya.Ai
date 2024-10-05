@@ -24,4 +24,15 @@ export const HeaderContainer = styled.header`
       }
     }
   }
+
+  @media (max-width: 450px) {
+    border: 0px;
+    box-shadow: none;
+
+    .right-content {
+      .icons {
+        display: none;
+      }
+    }
+  }
 `;

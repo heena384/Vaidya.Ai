@@ -3,6 +3,7 @@
 import React from "react";
 
 import { BannerContainer } from "./Banner.styles";
+import Carousel from "../Common/Slider";
 
 const Banner: React.FC = () => {
   return (

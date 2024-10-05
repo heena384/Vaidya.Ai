@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       />{" "}
       <div className="right-content">
         <Image
-          className="icon"
+          className="icons"
           height={26}
           width={27}
           alt="search"

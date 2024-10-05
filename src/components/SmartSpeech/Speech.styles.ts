@@ -45,4 +45,41 @@ export const SpeechContainer = styled.div`
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 40px;
+    border-radius: 52px;
+    border-top: 1px solid rgba(1, 125, 185, 1);
+    border-bottom: 1px solid rgba(1, 125, 185, 1);
+
+    .text-wrapper {
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+        text-align: left;
+      }
+
+      h4 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+      }
+    }
+
+    .icon-col {
+      width: 24%;
+      display: flex;
+      justify-content: flex-end;
+      .icon {
+        height: 30px;
+        width: 20px;
+      }
+    }
+
+    .row > * {
+      width: auto;
+    }
+  }
 `;

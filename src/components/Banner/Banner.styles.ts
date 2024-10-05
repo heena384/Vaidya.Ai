@@ -21,4 +21,18 @@ export const BannerContainer = styled.div`
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    border-bottom: 1px solid #68c8f6;
+
+    border-radius: 40px;
+    .text {
+      span {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38.4px;
+        text-align: center;
+      }
+    }
+  }
 `;

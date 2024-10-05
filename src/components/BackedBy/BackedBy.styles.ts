@@ -105,4 +105,73 @@ export const BackedContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 450px) {
+    background-color: transparent;
+
+    h3,
+    h4 {
+      background: linear-gradient(85.84deg, #017db9 68.1%, #003853 122.63%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38.4px;
+      text-align: center;
+    }
+
+    .icon-wrapper {
+      .icon-doctor {
+        position: absolute;
+        left: 31%;
+        margin-top: 10px;
+      }
+      .icon-backed {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .row-wrapper {
+      padding-top: 30px;
+
+      .content-wrapper .content-wrapper-row {
+        padding: 0px 35px;
+        .text-col {
+          padding: 20px 0px;
+          span {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            text-align: center;
+            color: rgba(68, 68, 68, 1);
+          }
+        }
+      }
+    }
+
+    .safety {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38.4px;
+      text-align: center;
+    }
+
+    h4 {
+      color: rgba(68, 68, 68, 1);
+      -webkit-text-fill-color: rgba(68, 68, 68, 1);
+      padding: 0px 20px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      text-align: center;
+    }
+
+    .privacy-row {
+      padding: 20px;
+    }
+  }
 `;

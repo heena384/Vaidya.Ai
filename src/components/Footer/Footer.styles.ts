@@ -9,8 +9,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* Centering the content (text and button) in the middle */
+  border-top: 1px solid #68c8f6;
   .content {
     display: flex;
     flex-direction: column;

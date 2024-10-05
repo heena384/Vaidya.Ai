@@ -27,8 +27,10 @@ export const LayoutContainer = styled(Container)`
     height: 100%;
     min-height: calc(100vh - 80px);
   }
-  @media (min-width: 350px) and (max-width: 700px) {
+  @media screen and (max-width: 450px) {
+    margin-top: 30px;
     .content {
+      background: #fff;
     }
   }
 `;
