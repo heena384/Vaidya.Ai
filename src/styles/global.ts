@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 .swiper_container {
-  height: 52rem;
+  height: 34rem;
   padding: 2rem 0;
   position: relative;
 }
@@ -171,4 +171,16 @@ export const InitialsText = styled.span`
   align-items: center;
   justify-content: center;
   display: flex;
+`;
+
+export const StyledImageWrapper = styled.div`
+  height: 550px; /* Set desired height */
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 `;

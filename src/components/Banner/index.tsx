@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
         <br />
         <span>with Vaidya AI</span>
       </div>
-      <div>
+      <div className="container">
         <Carousel />
       </div>
     </BannerContainer>
