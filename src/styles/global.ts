@@ -129,7 +129,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 
 export const LayoutContainer = styled(Container)`
-  margin-top: 80px;
+  margin-top: 40px;
   background: linear-gradient(180deg, #017db9 0%, #003853 100%);
   padding: 0px;
   font-family: "Poppins", sans-serif;

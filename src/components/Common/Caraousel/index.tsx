@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
+import {
+  Pagination,
+  Navigation,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import Image from "next/image";
 import slide_image_1 from "../../../assets/image1.png";
@@ -39,7 +46,7 @@ const Carousel: React.FC = () => {
     <div className="carousel-container">
       <Swiper
         effect={"coverflow"}
-        grabCursor={false}
+        grabCursor={true}
         centeredSlides={true}
         loop={true}
         slidesPerView={3}
@@ -49,13 +56,20 @@ const Carousel: React.FC = () => {
           depth: 100,
           modifier: 2.5,
         }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }}
+        // allowTouchMove={false}
+        // modules={[EffectCoverflow, Autoplay]}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
-        allowTouchMove={false}
-        modules={[EffectCoverflow, Autoplay]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
+        autoplay={true}
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -68,5 +82,4 @@ const Carousel: React.FC = () => {
     </div>
   );
 };
-
 export default Carousel;

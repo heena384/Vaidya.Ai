@@ -13,6 +13,7 @@ export const BannerContainer = styled.div`
     -webkit-text-fill-color: transparent;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
     span {
       text-align: center; /* Center the text */
       font-size: 46px;
