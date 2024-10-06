@@ -47,7 +47,8 @@ export const SpeechContainer = styled.div`
   }
 
   @media screen and (max-width: 450px) {
-    padding: 40px;
+    padding: 60px 40px;
+    margin-top: 30px;
     border-radius: 52px;
     border-top: 1px solid rgba(1, 125, 185, 1);
     border-bottom: 1px solid rgba(1, 125, 185, 1);
@@ -76,6 +77,10 @@ export const SpeechContainer = styled.div`
         height: 30px;
         width: 20px;
       }
+    }
+
+    .row {
+      justify-content: space-between;
     }
 
     .row > * {

@@ -27,10 +27,26 @@ export const LayoutContainer = styled(Container)`
     height: 100%;
     min-height: calc(100vh - 80px);
   }
+
+  .desktop-view {
+    display: block;
+  }
+
+  .mobile-view {
+    display: none;
+  }
   @media screen and (max-width: 450px) {
     margin-top: 30px;
     .content {
       background: #fff;
+    }
+
+    .desktop-view {
+      display: none;
+    }
+
+    .mobile-view {
+      display: block;
     }
   }
 `;

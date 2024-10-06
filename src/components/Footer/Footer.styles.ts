@@ -46,4 +46,20 @@ export const FooterContainer = styled.div`
       margin-top: 10px;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    height: 90vh;
+    margin-top: 50px;
+    .content {
+      justify-content: flex-start;
+      margin-top: 6rem;
+    }
+
+    .fractal-footer {
+      margin-bottom: 30px;
+      .icon {
+        margin-bottom: 20px;
+      }
+    }
+  }
 `;

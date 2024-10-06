@@ -13,6 +13,12 @@ export const BackedContainer = styled.div`
     text-align: center;
   }
 
+  .desktop-view {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .safety {
     padding-top: 5rem;
   }
@@ -109,6 +115,10 @@ export const BackedContainer = styled.div`
   @media screen and (max-width: 450px) {
     background-color: transparent;
 
+    .desktop-view {
+      display: none;
+    }
+
     h3,
     h4 {
       background: linear-gradient(85.84deg, #017db9 68.1%, #003853 122.63%);
@@ -172,6 +182,14 @@ export const BackedContainer = styled.div`
 
     .privacy-row {
       padding: 20px;
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+  @media screen and (max-width: 758px) and (min-width: 451px) {
+    .row-wrapper .content-wrapper {
+      justify-content: center;
     }
   }
 `;

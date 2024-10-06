@@ -32,22 +32,27 @@ const BackedByDoctor: React.FC = () => {
       <Row className="row-wrapper">
         <Col md={6} sm={12}>
           <div className="icon-wrapper">
-            {imageSrc.includes("mobile") && (
-              <Image
-                className="icon-doctor"
-                height={34}
-                width={24}
-                alt="Doctor"
-                src="/assets/doctor.svg"
-              />
-            )}
             <Image
-              className="icon-backed"
+              className="icon-doctor mobile-view"
+              height={34}
+              width={24}
+              alt="Doctor"
+              src="/assets/doctor.svg"
+            />
+            <Image
+              className="icon-backed mobile-view"
               height={265}
               width={285}
               alt="Doctor backup"
-              src={imageSrc}
+              src="/assets/back-by-doctor-mobile.svg"
             />{" "}
+            <Image
+              className="icon-backed desktop-view"
+              height={265}
+              width={285}
+              alt="Doctor backup"
+              src="/assets/back-by-doctor.svg"
+            />
           </div>
         </Col>
         <Col md={6} sm={12}>
@@ -85,56 +90,53 @@ const BackedByDoctor: React.FC = () => {
       <h3 className="safety">Your safety matters</h3>
       <h4>Privacy First. Confidential.</h4>
       <Row className="privacy-row">
-        {imageSrc.includes("mobile") ? (
-          <Col sm={12}>
-            <Image
-              className="privacy-icon"
-              height={158}
-              width={360}
-              alt="Vector icon"
-              src="/assets/mobile-privacy.svg"
-            />
+        <Col sm={12} className="mobile-view">
+          <Image
+            className="privacy-icon"
+            height={158}
+            width={360}
+            alt="Vector icon"
+            src="/assets/mobile-privacy.svg"
+          />
+        </Col>
+        <div className="desktop-view privacy-view">
+          <Col md={4} sm={4} xs={4}>
+            <div className="privacy-card">
+              <Image
+                className="privacy-icon"
+                height={115}
+                width={91}
+                alt="Vector icon"
+                src="/assets/privacy-1.svg"
+              />
+              <p>Privacy remains intact - Zero data storage</p>
+            </div>
           </Col>
-        ) : (
-          <>
-            <Col md={4} sm={4}>
-              <div className="privacy-card">
-                <Image
-                  className="privacy-icon"
-                  height={115}
-                  width={91}
-                  alt="Vector icon"
-                  src="/assets/privacy-1.svg"
-                />
-                <p>Privacy remains intact - Zero data storage</p>
-              </div>
-            </Col>
-            <Col md={4} sm={4}>
-              <div className="privacy-card">
-                <Image
-                  className="privacy-icon"
-                  height={115}
-                  width={91}
-                  alt="Vector icon"
-                  src="/assets/privacy-2.svg"
-                />
-                <p>Uploaded reports persist for one chat only</p>
-              </div>
-            </Col>
-            <Col md={4} sm={4}>
-              <div className="privacy-card">
-                <Image
-                  className="privacy-icon"
-                  height={115}
-                  width={91}
-                  alt="Vector icon"
-                  src="/assets/privacy-3.svg"
-                />
-                <p>Log-in credentials stay secure</p>
-              </div>
-            </Col>
-          </>
-        )}
+          <Col md={4} sm={4} xs={4}>
+            <div className="privacy-card">
+              <Image
+                className="privacy-icon"
+                height={115}
+                width={91}
+                alt="Vector icon"
+                src="/assets/privacy-2.svg"
+              />
+              <p>Uploaded reports persist for one chat only</p>
+            </div>
+          </Col>
+          <Col md={4} sm={4} xs={4}>
+            <div className="privacy-card">
+              <Image
+                className="privacy-icon"
+                height={115}
+                width={91}
+                alt="Vector icon"
+                src="/assets/privacy-3.svg"
+              />
+              <p>Log-in credentials stay secure</p>
+            </div>
+          </Col>
+        </div>
       </Row>
     </BackedContainer>
   );

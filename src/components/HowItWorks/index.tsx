@@ -12,6 +12,7 @@ const HowItWorks: React.FC = () => {
         <br />
         <span>for you </span>
       </div>
+      <div className="mobile-view h-40" />
     </WorkContainer>
   );
 };

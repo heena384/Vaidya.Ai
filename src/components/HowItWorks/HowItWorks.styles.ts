@@ -19,4 +19,19 @@ export const WorkContainer = styled.div`
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 20px;
+    .text {
+      span {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38.4px;
+        text-align: center;
+      }
+    }
+    .h-40 {
+      height: 40px;
+    }
+  }
 `;
