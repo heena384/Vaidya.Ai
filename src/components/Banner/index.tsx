@@ -12,6 +12,8 @@ const Banner: React.FC = () => {
         <span>Cure Your Curiosity</span>
         <br />
         <span>with Vaidya AI</span>
+      </div>
+      <div>
         <Carousel />
       </div>
     </BannerContainer>
