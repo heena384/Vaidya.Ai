@@ -3,7 +3,7 @@
 import React from "react";
 
 import { BannerContainer } from "./Banner.styles";
-import Carousel from "../Common/Slider";
+import Carousel from "../Common/Caraousel";
 
 const Banner: React.FC = () => {
   return (
@@ -12,6 +12,7 @@ const Banner: React.FC = () => {
         <span>Cure Your Curiosity</span>
         <br />
         <span>with Vaidya AI</span>
+        <Carousel />
       </div>
     </BannerContainer>
   );
